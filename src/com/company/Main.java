@@ -6,37 +6,17 @@ import java.util.Collections;
 public class Main {
 
     public static void main(String[] args) {
-	int[] array={2,3,4,5};
-    MaxZahl(array);
-    MinZahl(array);
-    MaxSumme(array);
-    MinSumme(array);
+        Aufgabe1 aufgabe1=new Aufgabe1();
+        aufgabe1.run();
+        Aufgabe2 aufgabe2=new Aufgabe2();
+        aufgabe2.run();
+        Aufgabe3 aufgabe3=new Aufgabe3();
+        aufgabe3.run();
+        Aufgabe4 aufgabe4=new Aufgabe4();
+        aufgabe4.run();
     }
 
-    public static int MaxZahl(int[] numberArray){
-        Arrays.sort(numberArray);
-        return numberArray[0];
-    }
-    public static int MinZahl(int[] numberArray){
-        Arrays.sort(numberArray);
-        return numberArray[numberArray.length-1];
-    }
-    public static int MaxSumme(int[] numberArray){
-        Arrays.sort(numberArray);
-        int sum=0;
-        for(int i=numberArray.length-1;i>=1;i--) {
-            sum=sum+numberArray[i];
-        }
-        return sum;
-        }
-    public static int MinSumme(int[] numberArray){
-        Arrays.sort(numberArray);
-        int sum=0;
-        for(int i=0;i>=numberArray.length-2;i--) {
-            sum=sum+numberArray[i];
-        }
-        return sum;
-    }
-    }
+
+}
 
 
